@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "leaf-opens",
+      "expected": {
+        "before": "A curled leaf reads clearly against the dark vessel.",
+        "action": "The leaf reaches the water surface and starts to open. Its silhouette stays legible through the contact.",
+        "after": "The opened leaf settles below the surface and the ripple subsides."
+      },
+      "webProgress": {
+        "before": 0.2,
+        "action": 0.32,
+        "after": 0.47
+      },
+      "videoSeconds": {
+        "before": 1,
+        "action": 2,
+        "after": 3
+      }
+    }
+  ]
+}
