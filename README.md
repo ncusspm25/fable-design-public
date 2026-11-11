@@ -8,6 +8,8 @@
 
 The original **AOAWA · Whisked by Hand** example follows sifting, pouring, whisking and serving on a reversible scroll timeline. The screenshots show the running Three.js site.
 
+[開啟青沫抹茶互動示範 · Open the AOAWA matcha demo](https://ncusspm25.github.io/fable-design-public/)
+
 [![青沫 AOAWA 桌面首屏 / desktop opening](docs/screenshots/desktop-opening.png)](docs/screenshots/desktop-opening.png)
 
 | 刷茶 · Whisk | 奉茶 · Serve |
