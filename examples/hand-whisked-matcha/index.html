@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#15291f">
-  <meta name="description" content="青沫 AOAWA 的互動抹茶手記，從篩粉、注水到用竹茶筅刷出細沫。">
-  <title>青沫 AOAWA — Whisked by Hand</title>
+  <meta name="description" content="An interactive matcha story from AOAWA. Sift the powder, pour hot water, and whisk it into a fine foam.">
+  <title>AOAWA — Whisked by Hand</title>
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/typography.css">
   <link rel="stylesheet" href="tokens.css">
@@ -16,7 +16,7 @@
   <script type="module" src="story.mjs"></script>
 </head>
 <body>
-  <main class="story" aria-label="青沫手刷抹茶">
+  <main class="story" aria-label="Whisking matcha by hand">
     <span class="anchor" id="start" aria-hidden="true"></span>
     <span class="anchor" id="sift" aria-hidden="true"></span>
     <span class="anchor" id="pour" aria-hidden="true"></span>
@@ -33,45 +33,43 @@
           <img class="scene-image" src="assets/sift-desktop.webp" alt="">
         </picture>
         <canvas class="scene" aria-hidden="true"></canvas>
-        <figcaption>竹茶筅・陶茶碗</figcaption>
+        <figcaption>Bamboo whisk · Ceramic bowl</figcaption>
       </figure>
 
       <header class="masthead">
-        <a class="brand" href="#start" aria-label="青沫，回到開頭">
-          <span lang="en">AOAWA</span><span class="brand-name">青沫</span>
-        </a>
-        <span class="edition">抹茶手記</span>
+        <a class="brand" href="#start" aria-label="AOAWA, back to the beginning">AOAWA</a>
+        <span class="edition">Matcha Journal</span>
       </header>
 
       <div class="spread">
         <div class="copy">
           <article class="chapter" data-chapter="sift">
-            <p class="eyebrow">手刷抹茶</p>
-            <h1 lang="en">Whisked<br><em>by hand.</em></h1>
-            <p class="description">將抹茶篩進茶碗，讓細粉更容易拌勻。</p>
+            <p class="eyebrow">Hand-whisked matcha</p>
+            <h1>Whisked<br><em>by hand.</em></h1>
+            <p class="description">Sift the matcha into the bowl so it blends evenly.</p>
             <a class="action" href="#sift">
-              開始沖泡
+              Make matcha
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M12 4v15m-5-5 5 5 5-5"/>
               </svg>
             </a>
           </article>
           <article class="chapter" data-chapter="pour" hidden>
-            <p class="eyebrow">注水</p>
-            <h2 lang="en">A ribbon<br><em>of water.</em></h2>
-            <p class="description">熱水緩緩入碗，先潤濕抹茶粉。</p>
+            <p class="eyebrow">Pour</p>
+            <h2>A ribbon<br><em>of water.</em></h2>
+            <p class="description">Pour hot water gently into the bowl to wet the matcha.</p>
           </article>
           <article class="chapter" data-chapter="whisk" hidden>
-            <p class="eyebrow">刷茶</p>
-            <h2 lang="en">Into a<br><em>fine foam.</em></h2>
-            <p class="description">手腕帶動茶筅來回刷動，讓細沫浮上茶面。</p>
+            <p class="eyebrow">Whisk</p>
+            <h2>Into a<br><em>fine foam.</em></h2>
+            <p class="description">Flick your wrist back and forth until fine bubbles cover the surface.</p>
           </article>
           <article class="chapter" data-chapter="serve" hidden>
-            <p class="eyebrow">奉茶</p>
-            <h2 lang="en">A bowl<br><em>of green.</em></h2>
-            <p class="description">提起茶筅，趁泡沫還細時喝第一口。</p>
+            <p class="eyebrow">Serve</p>
+            <h2>A bowl<br><em>of green.</em></h2>
+            <p class="description">Lift the whisk and take a sip while the foam is still fine.</p>
             <a class="action" href="#start">
-              再刷一碗
+              Make another bowl
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                 <path d="M3 12a9 9 0 1 1 2.65 6.36M3 12V5m0 7h7"/>
               </svg>
@@ -81,16 +79,16 @@
 
       </div>
 
-      <nav class="chapters" aria-label="沖泡章節">
+      <nav class="chapters" aria-label="Matcha preparation steps">
         <ol>
-          <li><a href="#sift" aria-current="step"><span>01</span><span>篩粉</span><span lang="en">Sift</span></a></li>
-          <li><a href="#pour"><span>02</span><span>注水</span><span lang="en">Pour</span></a></li>
-          <li><a href="#whisk"><span>03</span><span>刷茶</span><span lang="en">Whisk</span></a></li>
-          <li><a href="#serve"><span>04</span><span>奉茶</span><span lang="en">Serve</span></a></li>
+          <li><a href="#sift" aria-current="step"><span>01</span><span>Sift</span></a></li>
+          <li><a href="#pour"><span>02</span><span>Pour</span></a></li>
+          <li><a href="#whisk"><span>03</span><span>Whisk</span></a></li>
+          <li><a href="#serve"><span>04</span><span>Serve</span></a></li>
         </ol>
       </nav>
     </div>
   </main>
-  <noscript><p>篩粉入碗，注入熱水，以茶筅來回刷出細沫後即可飲用。</p></noscript>
+  <noscript><p>Sift matcha into a bowl, add hot water, and whisk back and forth until a fine foam forms.</p></noscript>
 </body>
 </html>

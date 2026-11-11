@@ -38,6 +38,7 @@ test('real wheel input, chapter navigation and replay reach the expected rendere
     await page.goto(base);
     await page.locator('.visual[data-renderer="ready"]').waitFor();
     await chapter(page, 'sift');
+    assert.equal(await page.locator('html').getAttribute('lang'), 'en');
     const travel = await page.evaluate(() => document.querySelector('.story').offsetHeight - document.querySelector('.stage').offsetHeight);
     const delta = Math.round(travel * progress.pour.action);
     await page.mouse.move(166, 300);
@@ -50,10 +51,11 @@ test('real wheel input, chapter navigation and replay reach the expected rendere
 
     await link(page, 'whisk').press('Enter');
     await chapter(page, 'whisk');
+    assert.equal(await page.locator('figcaption').textContent(), 'Bamboo whisk · Back and forth');
     await link(page, 'serve').click();
     await page.locator('.stage[data-light]').waitFor();
     await chapter(page, 'serve');
-    await page.getByRole('link', { name: '再刷一碗' }).click();
+    await page.getByRole('link', { name: 'Make another bowl' }).click();
     await page.waitForFunction(() => scrollY === 0);
     await chapter(page, 'sift');
     assert.deepEqual(errors, []);
