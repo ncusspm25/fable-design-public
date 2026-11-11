@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("fraunces-latin.woff2") format("woff2");
+  font-weight: 300 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("hanken-grotesk-latin.woff2") format("woff2");
+  font-weight: 400 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Serif TC";
+  src: url("noto-serif-tc.woff") format("woff");
+  font-weight: 400 500;
+  font-display: swap;
+}
+
+:root {
+  --font-cjk: "Noto Serif TC", "Noto Serif CJK TC", "Songti TC", PMingLiU;
+  --font-display: "Fraunces", var(--font-cjk), Georgia, serif;
+  --font-body: "Hanken Grotesk", var(--font-cjk), "Microsoft JhengHei", "PingFang TC", sans-serif;
+  --title-weight: 320;
+}

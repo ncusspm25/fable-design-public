@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "events": [
+    {
+      "id": "sift",
+      "expected": {
+        "before": "The tea bowl and bamboo whisk are visible.",
+        "action": "Fine matcha powder falls through the sieve into the bowl.",
+        "after": "The powder has settled in the bowl."
+      },
+      "webProgress": {
+        "before": 0,
+        "action": 0.13,
+        "after": 0.25
+      }
+    },
+    {
+      "id": "pour",
+      "expected": {
+        "before": "The sifted powder is ready for water.",
+        "action": "A thin stream falls vertically from the spout and ripples the tea surface.",
+        "after": "The stream stops and the tea fills the base of the bowl."
+      },
+      "webProgress": {
+        "before": 0.25,
+        "action": 0.36,
+        "after": 0.48
+      }
+    },
+    {
+      "id": "whisk",
+      "expected": {
+        "before": "The bamboo whisk is above the wet tea.",
+        "action": "The tines move back and forth and fine bubbles accumulate.",
+        "after": "The whisk lifts from the surface."
+      },
+      "webProgress": {
+        "before": 0.48,
+        "action": 0.66,
+        "after": 0.82
+      }
+    },
+    {
+      "id": "serve",
+      "expected": {
+        "before": "The whisk is leaving the bowl.",
+        "action": "The finished foam is in focus.",
+        "after": "The scene rests on the finished bowl."
+      },
+      "webProgress": {
+        "before": 0.82,
+        "action": 0.94,
+        "after": 1
+      }
+    }
+  ]
+}
