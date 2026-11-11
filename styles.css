@@ -51,7 +51,6 @@ a:active { transform: translateY(var(--line)); }
 .brand {
   display: inline-flex;
   align-items: baseline;
-  gap: var(--space-3);
   min-height: var(--tap);
   padding-block: var(--space-1);
   font: var(--wordmark-size) / 1.3 var(--font-display);
@@ -59,7 +58,7 @@ a:active { transform: translateY(var(--line)); }
   white-space: nowrap;
 }
 .brand:hover { color: var(--accent); }
-.brand-name, .edition {
+.edition {
   color: var(--muted);
   font: 500 var(--type-small) / 1.5 var(--font-body);
   letter-spacing: var(--label-tracking);
@@ -198,14 +197,13 @@ figcaption {
 }
 .chapters a:hover, .chapters a[aria-current] { color: var(--ink); }
 .chapters a[aria-current] { font-weight: 500; }
-.chapters a span:first-child, .chapters a span:last-child {
+.chapters a span:first-child {
   font-size: var(--type-small);
   font-variant-numeric: tabular-nums;
 }
 .chapters a span:first-child { color: var(--accent); }
 
 @media (max-width: 767px) {
-  .brand { gap: var(--space-2); }
   .spread {
     position: absolute;
     top: var(--copy-top);
@@ -227,14 +225,10 @@ figcaption {
   .description { margin-top: var(--space-3); }
   .action { margin-top: var(--space-3); }
   .chapters a {
-    flex-wrap: wrap;
-    align-content: center;
-    column-gap: var(--space-1);
-    row-gap: 0;
+    gap: var(--space-1);
     padding: var(--space-2) var(--space-1);
     font-size: var(--type-small);
   }
-  .chapters a span:last-child { width: 100%; }
 }
 
 @media (max-height: 560px) {

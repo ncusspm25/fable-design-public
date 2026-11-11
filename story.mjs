@@ -14,7 +14,7 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 const articles = [...document.querySelectorAll('.chapter')];
 const links = [...document.querySelectorAll('.chapters a')];
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
-const labels = ['竹茶筅・陶茶碗', '注水・抹茶入碗', '竹茶筅・來回刷動', '刷好的抹茶・細沫'];
+const labels = ['Bamboo whisk · Ceramic bowl', 'Hot water · Matcha powder', 'Bamboo whisk · Back and forth', 'Whisked matcha · Fine foam'];
 const chapters = events.map(({ id, webProgress }, index) => ({
   id, ...webProgress, still: index === 0 ? webProgress.before : webProgress.action,
 }));
